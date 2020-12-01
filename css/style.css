@@ -1,0 +1,132 @@
+/* ============================================================================================== 
+SED Innovations
+https://sed.am
+https://mkrtchyan.ga
+================================================================================================= */
+body{background-image:url('../img/bgcolor.png');
+	overflow:hidden;}
+
+.wh{
+	font-size:0.8em;
+	color:white;
+	width:250px;
+	height:auto;
+	display:inline-block;
+	padding-left:1%; 
+	padding-top:2%; 
+	}
+.wh2{
+	font-size:0.8em;
+	color:white;
+	width:250px;
+	height:auto;
+	display:inline-block;
+	padding-left:1%; 
+	padding-top:2%; 
+	}
+
+.land-3{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-repeat:no-repeat;
+	background-image: url('../img/ground2.png');
+	background-size: 100vw;
+	animation-name:blur2;
+	animation-duration:2.5s;
+	animation-play-state:ease-in;
+	animation-fill-mode:forwards;
+
+}
+
+@keyframes blur2{
+	0%{
+		filter:blur(0px);
+	}
+
+	100%{
+		filter:blur(5px);
+	}
+}
+.land-2{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-repeat:no-repeat;
+	background-image: url('../img/tree.png');
+	background-size: 100%;
+}
+.land-21{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-repeat:no-repeat;
+	background-image: url('../img/light.png');
+	background-size: 100vw;
+	animation-name:op;
+	animation-duration: 1.5s;
+	animation-timing-function:ease-in-out;
+	animation-iteration-count:infinite;
+}
+@keyframes op {
+	0%{
+		opacity:100%;
+	}
+	50%{
+		opacity:0%;
+	}
+	100%{
+		opacity:100%;
+	}
+}
+
+.moon{
+	bottom:5%;
+	left:3%;
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	background-image: url('../img/moon.png');
+	background-size: 90vw;
+	position:absolute;
+	z-index:-10;
+	animation-name:blur;
+	animation-duration:2s;
+	animation-play-state:ease-in;
+	animation-fill-mode:forwards;
+}
+
+@keyframes blur{
+	0%{
+		filter:blur(20px);
+	}
+
+	100%{
+		filter:blur(0px);
+	}
+}
+
+.snow{
+	width:150%;
+	height:150%;
+	position:absolute;
+	background-image: url('../img/snow.png');
+	background-size:50vw;
+	z-index:-11;
+	opacity:25%;
+}
+.type{width:100%;
+	height:100%;
+	left:68%;
+	top:3%;
+	position:absolute;
+	background-repeat:no-repeat;
+	background-image: url('../img/type.png');
+	background-size:30vw;
+	z-index:-5;
+
+}
+}
+
+
+/**/
